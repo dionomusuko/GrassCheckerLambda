@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(encoder.JsonEncoder("https://api.github.com/users/dionomusuko/repos"))
+	url := "https://api.github.com/users/dionomusuko/repos"
+	fmt.Println(encoder.JsonEncoder(url))
 }
