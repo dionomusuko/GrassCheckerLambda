@@ -42,8 +42,8 @@ func JsonEncoder(url string) string {
 	for _, commit := range commits {
 		tmp = commit.PushedAt
 		if strings.Index(tmp, t) == 0 {
-			break
 			return "お疲れ様でした"
+			break
 		}
 	}
 	return "まだコミットされてません\n" +
