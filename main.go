@@ -24,6 +24,7 @@ func main() {
 	sl_api := os.Getenv("SLACK_API")
 
 	str := encoder.JsonEncoder(github_api)
+	//slack_apiにpost requestを投げる
 	t, err := json.Marshal(payload{Text: str})
 	if err != nil {
 		log.Println(err)
