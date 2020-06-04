@@ -24,16 +24,16 @@ Githubの草が生えているか23時に通知するサービス
    
  4. Lambdaに環境変数を追加
    
-         | キー | 値 |
-         |:----|:----|
-         |GITHUB_API|https://api.github.com/users/自分のアカウント名/repos|
-         |SLACK_API|webhook URL|
+       | キー | 値 |
+       |:----|:----|
+      |GITHUB_API|https://api.github.com/users/自分のアカウント名/repos|
+      |SLACK_API|webhook URL|
          
  5. Lambda用にコンパイル
 
          `$ GOOS=linux GOARCH=amd64 go build -o main`
  
-         zip化する
+       zip化する
          
          `$ zip main.zip ./main`
  
