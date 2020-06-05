@@ -31,11 +31,11 @@ Githubの草が生えているか23時に通知するサービス
          
  5. Lambda用にコンパイル
 
-         `$ GOOS=linux GOARCH=amd64 go build -o main`
+         $ GOOS=linux GOARCH=amd64 go build -o main
  
        zip化する
          
-         `$ zip main.zip ./main`
+         $ zip main.zip ./main
  
  6. lambndaに関数パッケージとしてmain.zipをアップロード
  
